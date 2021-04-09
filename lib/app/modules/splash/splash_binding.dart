@@ -7,4 +7,3 @@ class SplashBinding implements Bindings {
     Get.lazyPut(() => SplashController());
   }
 }
- 11 min

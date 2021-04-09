@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_demo/app/modules/splash/splash_binding.dart';
+import 'package:getx_demo/app/modules/splash/splash_page.dart';
+import 'package:getx_demo/app/routes/app_pages.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +16,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: SplashPage(),
+      initialBinding: SplashBinding(),
+      getPages: AppPages.pages,
     );
   }
 }
